@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">mod2demo2</string>
+    <string name="label_name">Nom :</string>
+    <string name="label_speed">Vitesse :</string>
+    <string name="label_height">Hauteur :</string>
+</resources>
