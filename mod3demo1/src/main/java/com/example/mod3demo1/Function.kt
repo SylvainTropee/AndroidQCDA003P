@@ -10,34 +10,34 @@ package com.example.mod3demo1
 //}
 
 //opérateur Elvis, et gestion du null
-//fun main() {
-//
-//    //gestion du null à revoir
-//    val name : String? = readlnOrNull()
-//
-//    //?. tester le null, ?: si null je mets une valeur par défaut
-//    val length = name?.length?:0
-//
-//    println(length)
-//}
-
-//liste et lambda
 fun main() {
 
-    val colors = mutableListOf<String>("bleu")
-    colors += "jaune"
-    colors += "jaune"
-    colors += "rouge"
-    colors += "vert"
+    //gestion du null à revoir
+    val name : String? = readlnOrNull()
 
-    var nbBlue = colors.filter {
-        it.length > 4
-    }.forEach {
-        println(it)
-    }
+    //?. tester le null, ?: si null je mets une valeur par défaut
+    val length = name?.length?:0
 
-    println(nbBlue)
+    println(length)
 }
+
+//liste et lambda
+//fun main() {
+//
+//    val colors = mutableListOf<String>("bleu")
+//    colors += "jaune"
+//    colors += "jaune"
+//    colors += "rouge"
+//    colors += "vert"
+//
+//    var nbBlue = colors.filter {
+//        it.length > 4
+//    }.forEach {
+//        println(it)
+//    }
+//
+//    println(nbBlue)
+//}
 
 
 
