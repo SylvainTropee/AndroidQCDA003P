@@ -20,7 +20,9 @@
             app:destination="@id/redFragment" />
         <action
             android:id="@+id/actionWitheToGreen"
-            app:destination="@id/greenFragment" />
+            app:destination="@id/greenFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/whiteFragment" />
     </fragment>
     <fragment
         android:id="@+id/redFragment"

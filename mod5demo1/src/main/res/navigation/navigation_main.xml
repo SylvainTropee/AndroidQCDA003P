@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.example.mod5demo1.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <argument
+            android:name="user"
+            app:argType="com.example.mod5demo1.User" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.mod5demo1.LoginFragment"
