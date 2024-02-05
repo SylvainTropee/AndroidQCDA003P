@@ -1,5 +1,6 @@
 package com.example.mod6demo3
 
+import android.app.SearchManager
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -28,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         activityContract.launch(android.Manifest.permission.CALL_PHONE)
-
 
 
 
