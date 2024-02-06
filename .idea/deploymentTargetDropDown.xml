@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="PokemonDbTest">
+        <State />
+      </entry>
       <entry key="app">
         <State />
       </entry>
@@ -48,6 +51,9 @@
         <State />
       </entry>
       <entry key="mod8tp1">
+        <State />
+      </entry>
+      <entry key="mod9demo1">
         <State />
       </entry>
     </value>
