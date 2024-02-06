@@ -38,14 +38,21 @@ android {
 
 dependencies {
 
-    val room_version = "2.5.0"
+    val lifecycle_version = "2.4.0"
+    // Permet d'ouvrir des threads
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
 
+    //Room et Test
+    val room_version = "2.5.0"
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$room_version")
     // optional - Test helpers
     testImplementation("androidx.room:room-testing:$room_version")
+
+    //permet d'instancier un viewModel by viewModels()
+    implementation("androidx.fragment:fragment-ktx:1.5.5")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
