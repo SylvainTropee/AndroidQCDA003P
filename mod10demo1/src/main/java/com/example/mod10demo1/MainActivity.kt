@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val planets = listOf(
+        var planets = mutableListOf(
             Planet("Mercury", "Gray", 0.33f, Type.ROCKY, 4879.4f),
             Planet("Venus", "Yellow", 4.87f, Type.HOT, 12104f),
             Planet("Earth", "Blue", 5.97f, Type.OCEAN, 12742f),
@@ -36,12 +36,13 @@ class MainActivity : AppCompatActivity() {
         )
 
         val recycler = findViewById<RecyclerView>(R.id.recycler)
-        recycler.adapter = PlanetAdapter(planets) { name ->
+        val adapter = PlanetAdapter(planets) { name ->
             Intent(this, TargetActivity::class.java).also { intent ->
                 intent.putExtra("name", name)
                 startActivity(intent)
             }
         }
+        recycler.adapter = adapter
         recycler.layoutManager = LinearLayoutManager(this)
         //recycler.layoutManager = GridLayoutManager(this, 3)
 
